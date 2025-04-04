@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { getTargetUrl } from '@/lib/links';
-// import { Loader2 } from 'lucide-react';
+import { Loader2 } from 'lucide-react';
 
 export default function RedirectPage() {
   const [searchParams] = useSearchParams();
@@ -40,9 +40,9 @@ export default function RedirectPage() {
         <div className="max-w-md w-full bg-white/10 backdrop-blur-lg rounded-2xl p-8 shadow-xl border border-white/20">
           <div className="text-center space-y-6">
             <div className="relative">
-              {/* <div className="absolute inset-0 flex items-center justify-center">
+              <div className="absolute inset-0 flex items-center justify-center">
                 <Loader2 className="w-12 h-12 text-blue-500 animate-spin" />
-              </div> */}
+              </div> 
               <div className="relative">
                 <h1 className="text-3xl font-bold text-white mb-2">Hold on!</h1>
                 <div className="text-4xl font-bold text-blue-500 animate-pulse">
